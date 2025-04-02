@@ -1,0 +1,15 @@
+# src/main/resources/application.yml
+jwt:
+  secret-key: "yourA512AbitAsecretAchangeAthisAtoAsecureArandomAstringAinAproductionAandAitAmustAbeAreallyApainfullyAlongAarghhhhhhhhhhhhhhh" # Must be Base64 encoded
+  expiration-ms: 86400000 # 24 hours
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cilantro
+    username: cilantro
+    password: cilantro
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
