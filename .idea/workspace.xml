@@ -6,17 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1b6bf57a-6187-444c-92f2-2f7786bcf161" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/cilantro/backend/authentication/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/cilantro/backend/authentication/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/cilantro/backend/configuration/CorsConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/authentication/AuthService.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/authentication/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/authentication/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/authentication/ProtectedRoute.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/authentication/ProtectedRoute.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/authentication/RegisterPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/authentication/RegisterPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sonar-project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sonar-project.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +94,8 @@
     "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/bh/code/jee-quickstart"
+    "last_opened_file_path": "/home/bh/code/jee-quickstart",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
   <component name="RunManager" selected="Gradle.backend [bootRun]">
