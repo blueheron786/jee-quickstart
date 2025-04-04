@@ -7,10 +7,9 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -24,6 +23,9 @@ public class AuthController {
 
     @Autowired
     private com.cilantro.backend.config.JwtTokenProvider tokenProvider;
+
+    @Autowired
+    private UserDetailsService userDetailsService;
 
     @PostMapping("/register")
     public ResponseEntity<ApiResponse> register(
@@ -53,5 +55,21 @@ public class AuthController {
         String jwt = tokenProvider.generateToken(authentication);
 
         return ResponseEntity.ok(new JwtAuthenticationResponse(jwt));
+    }
+
+    @GetMapping("/me")
+    public ResponseEntity<?> getCurrentUser(Authentication authentication) {
+        if (authentication != null && authentication.isAuthenticated()) {
+            String username = authentication.getName();
+            // Now you need to fetch the UserDetails based on the username
+            UserDetails userDetails = userDetailsService.loadUserByUsername(username);
+            if (userDetails != null) {
+                // You can now create a DTO from userDetails to return
+                return ResponseEntity.ok(userDetails); // Or a custom DTO
+            } else {
+                return ResponseEntity.status(500).body("Could not retrieve user details");
+            }
+        }
+        return ResponseEntity.status(401).body("Not authenticated");
     }
 }
