@@ -4,10 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b6bf57a-6187-444c-92f2-2f7786bcf161" name="Changes" comment="Fix: invalid Gradle JDK found">
+    <list default="true" id="1b6bf57a-6187-444c-92f2-2f7786bcf161" name="Changes" comment="Add end-to-end register -&gt; login test&#10;&#10;Add build status to README">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/cilantro/backend/BackendApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/cilantro/backend/BackendApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/authentication/Login.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/authentication/ProtectedRoute.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/authentication/RegisterForm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/authentication/RegisterForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/authentication/RegisterPage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/authentication/RegisterPage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/types/api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonar-project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sonar-project.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,14 +110,15 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "Shell Script.ui.executor": "Run",
     "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/bh/code/jee-quickstart/README.md",
+    "last_opened_file_path": "/home/bh/code/jee-quickstart/frontend",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.backend [bootRun]">
+  <component name="RunManager" selected="Shell Script.ui">
     <configuration name="backend [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -128,7 +146,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -189,6 +207,28 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="ui" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="npm run dev" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/frontend" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.backend [assemble]" />
+      <item itemvalue="Gradle.backend [bootRun]" />
+      <item itemvalue="Gradle.backend [build]" />
+      <item itemvalue="Gradle.backend [clean]" />
+      <item itemvalue="Shell Script.ui" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.backend [bootRun]" />
@@ -215,11 +255,20 @@
       <option name="project" value="LOCAL" />
       <updated>1743757575570</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add end-to-end register -&gt; login test&#10;&#10;Add build status to README">
+      <option name="closed" value="true" />
+      <created>1743758477220</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743758477220</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix: invalid Gradle JDK found" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: invalid Gradle JDK found" />
+    <MESSAGE value="Add end-to-end register -&gt; login test&#10;&#10;Add build status to README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add end-to-end register -&gt; login test&#10;&#10;Add build status to README" />
   </component>
 </project>

@@ -1,0 +1,19 @@
+.home-page {
+  text-align: center;
+  padding: 2rem;
+}
+
+.auth-options {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.auth-button {
+  padding: 0.75rem 1.5rem;
+  background: #646cff;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}

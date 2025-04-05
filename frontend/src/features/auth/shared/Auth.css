@@ -1,0 +1,17 @@
+.auth-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.error {
+  color: #ff4d4f;
+  margin: 0.5rem 0;
+}
+
+button {
+  background: #646cff;
+  color: white;
+  padding: 0.5rem 1rem;
+}
